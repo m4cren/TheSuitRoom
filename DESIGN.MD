@@ -7,7 +7,7 @@
       <img src="./figma/TheSuitRoom(Desktop)_f.jpg" width="500"/>
     </td>
     <td width="50%">
-      <p><strong>Mobile View</strong></p>
+      <p><strong>Tablet View</strong></p>
       <img src="./figma/TheSuitRoom(Tablet)_f.jpg" width="250"/>
     </td>
   </tr>
