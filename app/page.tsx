@@ -1,3 +1,9 @@
+import Landing from "./components/Landing/Landing";
+
 export default function Home() {
-  return <h1>The Suit Room</h1>;
+   return (
+      <main>
+         <Landing />
+      </main>
+   );
 }
