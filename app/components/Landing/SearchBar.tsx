@@ -3,7 +3,7 @@ import React from "react";
 
 const SearchBar = () => {
    return (
-      <div className="flex flex-row items-center justify-between px-[2.5vw] py-[2vw]">
+      <div className="flex flex-row items-center justify-between px-[3.5vw] py-[2vw]">
          <div className="relative">
             <input
                className="text-[1vw] border-forest-green/30 border-1 rounded-full px-4 text-forest-green py-[0.5vw]  w-[32vw] [box-shadow:-2px_2px_3px_rgba(0,0,0,0.2)]"

@@ -21,7 +21,7 @@ const Navbar = () => {
    return (
       <nav className="relative">
          <div className=" h-[3vw] rounded-b-full bg-forest-green [box-shadow:-2px_2px_4px_rgba(0,0,0,0.4)]"></div>
-         <div className="relative flex flex-row items-start justify-between px-[2.5vw]">
+         <div className="relative flex flex-row items-start justify-between px-[3.5vw]">
             <h1 className="text-forest-green mt-[1.25vw] text-[2vw] font-semibold">
                <span className="font-srisakdi">T</span>he{" "}
                <span className="font-srisakdi">S</span>uit{" "}

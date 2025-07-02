@@ -29,7 +29,7 @@ const Landing = () => {
    return (
       <section className="">
          <SearchBar />
-         <div className="relative px-[2.5vw] mt-4 pb-[2vw]">
+         <div className="relative px-[3.5vw] mt-4 pb-[2vw]">
             <div className="flex flex-col gap-[3.5vw]">
                <h1 className="text-[4.5vw] text-forest-green font-bold leading-[4.5vw]">
                   Look Sharp, Feel <br />
