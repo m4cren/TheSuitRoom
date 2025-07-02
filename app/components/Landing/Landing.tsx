@@ -27,9 +27,9 @@ const loadAvatar = () => {
 
 const Landing = () => {
    return (
-      <section className="h-fit">
+      <section className="">
          <SearchBar />
-         <div className="relative px-[2.5vw] mt-4 h-[100vh] ">
+         <div className="relative px-[2.5vw] mt-4 pb-[2vw]">
             <div className="flex flex-col gap-[3.5vw]">
                <h1 className="text-[4.5vw] text-forest-green font-bold leading-[4.5vw]">
                   Look Sharp, Feel <br />
@@ -45,33 +45,39 @@ const Landing = () => {
                   </button>
                </div>
             </div>
-            <div className="absolute bottom-[2vw] right-[4vw] flex flex-row items-end justify-between w-[38vw]">
-               <div className="flex flex-col gap-[0.8vw]">
-                  <h1 className="text-forest-green text-[2.75vw] font-bold">
-                     69 Million+
-                  </h1>
-                  <p className="text-forest-green text-[1vw]">
-                     Trusted by fashion-foward men. <br />
-                     Read real stories from customers who <br />
-                     value our craftmanship and care.
+
+            <div className="relative -mt-[21vw] w-full">
+               <Image
+                  src={"/images/Hero(Desktop).png"}
+                  alt="hero"
+                  width={"1920"}
+                  height={"1080"}
+                  className=" w-[95vw]"
+               />
+               <div>
+                  <p className="absolute bottom-[3vw] left-[4vw] text-mint-green text-[1.15vw]">
+                     Discover the latest trends & express your style <br />
+                     effortlessly. Shop exclusive collections with premium{" "}
+                     <br />
+                     design. just for you!
                   </p>
+                  <div className="absolute bottom-[1vw] right-[2vw] flex flex-row items-end justify-between w-[38vw]">
+                     <div className="flex flex-col gap-[0.8vw]">
+                        <h1 className="text-forest-green text-[2.75vw] font-bold">
+                           69 Million+
+                        </h1>
+                        <p className="text-forest-green text-[1vw]">
+                           Trusted by fashion-foward men. <br />
+                           Read real stories from customers who <br />
+                           value our craftmanship and care.
+                        </p>
+                     </div>
+                     <ul className="flex flex-row items-center -gap-5">
+                        {loadAvatar()}
+                     </ul>
+                  </div>
                </div>
-               <ul className="flex flex-row items-center -gap-5">
-                  {loadAvatar()}
-               </ul>
             </div>
-            <Image
-               src={"/images/Hero(Desktop).png"}
-               alt="hero"
-               width={"1920"}
-               height={"1080"}
-               className="absolute top-0 left-1/2 -translate-x-1/2 w-[95vw]"
-            />
-            <p className="absolute bottom-[4vw] left-[8vw] text-mint-green text-[1.15vw]">
-               Discover the latest trends & express your style <br />
-               effortlessly. Shop exclusive collections with premium <br />
-               design. just for you!
-            </p>
          </div>
       </section>
    );

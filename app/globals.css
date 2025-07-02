@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Srisakdi";
-  src: url("/fonts/Srisakdi-Bold.ttf");
-  font-weight: bolder;
+   font-family: "Srisakdi";
+   src: url("/fonts/Srisakdi-Bold.ttf");
+   font-weight: bolder;
 }
 body {
-  @apply bg-mint-green;
+   @apply bg-mint-green;
 }
 @theme {
-  --color-forest-green: #013220;
-  --color-slight-forest-green: #004a2f;
-  --color-mint-green: #e6f4e6;
-  --font-srisakdi: "Srisakdi", sans-serif;
+   --color-forest-green: #013220;
+   --color-slight-forest-green: #004a2f;
+   --color-mint-green: #e6f4e6;
+   --font-srisakdi: "Srisakdi", sans-serif;
 }
