@@ -37,7 +37,7 @@ const Landing = () => {
                   Modern Man
                </h1>
                <div className="flex flex-row items-center gap-2">
-                  <button className="font-medium text-[1.25vw] bg-gradient-to-b from-slight-forest-green to-forest-green rounded-full text-mint-green px-[4vw] py-[1vw]">
+                  <button className="font-medium md:text-[1.6vw] lg:text-[1.25vw] bg-gradient-to-b from-slight-forest-green to-forest-green rounded-full text-mint-green px-[4vw] md:py-[1.35vw]  lg:py-[1vw]">
                      Shop Now
                   </button>
                   <button className=" px-[1vw] py-[1vw] bg-gradient-to-b from-slight-forest-green to-forest-green rounded-full text-mint-green">
@@ -55,24 +55,26 @@ const Landing = () => {
                   className=" w-[95vw]"
                />
                <div>
-                  <p className="absolute bottom-[3vw] left-[4vw] text-mint-green text-[1.15vw]">
+                  <p className="absolute bottom-[3vw] left-[4vw] text-mint-green text-[1.5vw] lg:text-[1.15vw]">
                      Discover the latest trends & express your style <br />
                      effortlessly. Shop exclusive collections with premium{" "}
                      <br />
                      design. just for you!
                   </p>
-                  <div className="absolute bottom-[1vw] right-[2vw] flex flex-row items-end justify-between w-[38vw]">
-                     <div className="flex flex-col gap-[0.8vw]">
+                  <div className="absolute bottom-0 lg:bottom-[1vw] right-[2vw] flex flex-row items-end justify-between w-[38vw]">
+                     <div className="flex flex-col md:gap-0 lg:gap-[0.8vw]">
                         <h1 className="text-forest-green text-[2.75vw] font-bold">
                            69 Million+
                         </h1>
-                        <p className="text-forest-green text-[1vw]">
-                           Trusted by fashion-foward men. <br />
-                           Read real stories from customers who <br />
+                        <p className="text-forest-green text-[1.5vw] lg:text-[1vw]">
+                           Trusted by fashion-foward men.{" "}
+                           <br className="hidden lg:block" />
+                           Read real stories from customers who{" "}
+                           <br className="hidden lg:block" />
                            value our craftmanship and care.
                         </p>
                      </div>
-                     <ul className="flex flex-row items-center -gap-5">
+                     <ul className="hidden lg:flex flex-row items-center -gap-5">
                         {loadAvatar()}
                      </ul>
                   </div>

@@ -42,14 +42,14 @@ const FeaturedSection = () => {
    return (
       <section className="flex flex-col py-[2vw] items-center">
          <div className="flex flex-col  items-center py-[2vw]">
-            <h1 className="text-forest-green text-[2.5vw] font-bold">
+            <h1 className="text-forest-green md:text-[3.5vw] lg:text-[2.5vw] font-bold">
                Our Featured Collections
             </h1>
-            <p className="text-[1vw] text-forest-green">
+            <p className="md:text-[1.5vw] lg:text-[1vw] text-forest-green">
                Recently added items!
             </p>
          </div>
-         <ul className="grid grid-cols-3 items-center justify-center  w-[75vw] gap-[1vw] p-[1vw]">
+         <ul className="grid grid-cols-3 items-center justify-center  w-[90vw]  lg:w-[75vw] gap-[1vw] p-[1vw]">
             <div className="flex flex-col items-center justify-between gap-[1vw]">
                {featuredCollections.left.map(
                   ({ img_position, img_url, label, sub_lable }) => (
@@ -62,7 +62,7 @@ const FeaturedSection = () => {
                            alt="full_set"
                            width={250}
                            height={190}
-                           className={`rounded-xl overflow-hidden w-[25vw] h-[17vw] object-cover  object-${img_position}`}
+                           className={`rounded-xl overflow-hidden md:w-[30vw] md:h-[22vw] lg:w-[25vw] lg:h-[17vw] object-cover  object-${img_position}`}
                         />
                         <span
                            className="
@@ -74,8 +74,12 @@ const FeaturedSection = () => {
                       text-mint-green flex flex-col justify-end p-[1.5vw]        
                     "
                         >
-                           <h4 className=" text-[1.2vw]">{label}</h4>
-                           <p className="font-light text-[1vw]">{sub_lable}</p>
+                           <h4 className=" md:text-[1.8vw] lg:text-[1.2vw]">
+                              {label}
+                           </h4>
+                           <p className="font-light md:text-[1.5vw] lg:text-[1vw]">
+                              {sub_lable}
+                           </p>
                         </span>
                      </li>
                   ),
@@ -88,7 +92,7 @@ const FeaturedSection = () => {
                      alt="full_set"
                      width={250}
                      height={375}
-                     className={`rounded-xl overflow-hidden w-[25vw] h-[35vw] object-fill object-${featuredCollections.middle.img_position}`}
+                     className={`rounded-xl overflow-hidden  md:w-[35vw] md:h-[45vw] lg:w-[25vw]  lg:h-[35vw] object-fill object-${featuredCollections.middle.img_position}`}
                   />
                   <span
                      className="
@@ -100,10 +104,10 @@ const FeaturedSection = () => {
                       text-mint-green flex flex-col justify-end p-[1.5vw]        
                     "
                   >
-                     <h4 className=" text-[1.2vw]">
+                     <h4 className=" md:text-[1.8vw] lg:text-[1.2vw]">
                         {featuredCollections.middle.label}
                      </h4>
-                     <p className="font-light text-[1vw]">
+                     <p className="font-light md:text-[1.5vw] lg:text-[1vw]">
                         {featuredCollections.middle.sub_lable}
                      </p>
                   </span>
@@ -121,7 +125,7 @@ const FeaturedSection = () => {
                            alt="full_set"
                            width={250}
                            height={190}
-                           className={`rounded-xl overflow-hidden w-[25vw] h-[17vw] object-cover  object-${img_position}`}
+                           className={`rounded-xl overflow-hidden md:w-[30vw] md:h-[22vw] lg:w-[25vw] lg:h-[17vw] object-cover  object-${img_position}`}
                         />
                         <span
                            className="
@@ -133,8 +137,12 @@ const FeaturedSection = () => {
                       text-mint-green flex flex-col justify-end p-[1.5vw]        
                     "
                         >
-                           <h4 className=" text-[1.2vw]">{label}</h4>
-                           <p className="font-light text-[1vw]">{sub_lable}</p>
+                           <h4 className=" md:text-[1.8vw] lg:text-[1.2vw]">
+                              {label}
+                           </h4>
+                           <p className="font-light md:text-[1.5vw] lg:text-[1vw]">
+                              {sub_lable}
+                           </p>
                         </span>
                      </li>
                   ),

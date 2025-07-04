@@ -14,7 +14,7 @@ const categoryList = [
       quantity: 35,
    },
    {
-      label: "slacks",
+      label: "Slacks",
       value: "slacks",
       img_url: "slacks",
       quantity: 35,
@@ -23,7 +23,7 @@ const categoryList = [
 const CategorySection = () => {
    return (
       <section className="py-[2vw] px-[3.5vw]">
-         <h1 className="text-[2.5vw] text-forest-green font-bold mb-[1vw]">
+         <h1 className="text-[3.5vw] lg:text-[2.5vw] text-forest-green font-bold mb-[1vw]">
             Our Category List
          </h1>
          <ul className="flex flex-row items-center justify-center gap-[3vw] px-[3vw]">
@@ -37,7 +37,7 @@ const CategorySection = () => {
                      alt={label}
                      width={300}
                      height={275}
-                     className="w-[20vw] h-[25vw] object-cover object-center"
+                     className="md:w-[27vw] md:h-[35vw] lg:w-[20vw] lg:h-[25vw] object-cover object-center"
                   />
                   <span
                      className="
@@ -46,8 +46,10 @@ const CategorySection = () => {
                   bg-black/30 flex flex-col items-center justify-center text-mint-green font-medium          
                 "
                   >
-                     <h4 className="text-[1.25vw]">{label}</h4>
-                     <p className="text-[1vw] font-light">{quantity} Items</p>
+                     <h4 className="text-[1.75vw] lg:text-[1.25vw]">{label}</h4>
+                     <p className="text-[1.5vw] lg:text-[1vw] font-light">
+                        {quantity} Items
+                     </p>
                   </span>
                </li>
             ))}
