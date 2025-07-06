@@ -44,25 +44,25 @@ const ProductSection = () => {
    return (
       <section className="flex flex-col items-center justify-center pb-[2vw]">
          <div className="flex flex-col  items-center py-[2vw]">
-            <h1 className="text-forest-green text-[3.5vw] lg:text-[2.5vw] font-bold">
+            <h1 className="text-forest-green text-[6vw] md:text-[3.5vw] lg:text-[2.5vw] font-bold">
                Our Products
             </h1>
-            <p className="text-[1.5vw] lg:text-[1vw] text-forest-green">
+            <p className="text-[2.5vw] md:text-[1.5vw] lg:text-[1vw] text-forest-green">
                Recently added items!
             </p>
          </div>
-         <ul className="grid grid-cols-3 gap-[2vw]">
+         <ul className="grid grid-cols-2 md:grid-cols-3 gap-[4vw] md:gap-[2vw]">
             {productLists.map(({ label, price, value }) => (
                <li
                   key={value}
-                  className="relative overflow-hidden rounded-3xl  [box-shadow:-2px_2px_4px_rgba(0,0,0,0.4)]  "
+                  className="relative overflow-hidden rounded-xl md:rounded-3xl  [box-shadow:-2px_2px_4px_rgba(0,0,0,0.4)]  "
                >
                   <Image
                      src={`/images/products/${value}.jpg`}
                      alt="model 1"
                      width={300}
                      height={275}
-                     className=" md:w-[27vw]  md:h-[34vw] lg:w-[20vw]  lg:h-[25vw] object-cover object-top"
+                     className=" w-[40vw] h-[55vw] md:w-[27vw]  md:h-[34vw] lg:w-[20vw]  lg:h-[25vw] object-cover object-top"
                   />
                   <span
                      className="
@@ -71,13 +71,13 @@ const ProductSection = () => {
                       bg-gradient-to-t
                       from-black/80               
                       to-transparent  
-                      text-mint-green flex flex-col justify-end p-[2vw] lg:p-[1.5vw]        
+                      text-mint-green flex flex-col justify-end p-[3vw] md:p-[2vw] lg:p-[1.5vw]        
                     "
                   >
-                     <h4 className=" md:text-[1.75vw] lg:text-[1.2vw]">
+                     <h4 className="text-[3vw] md:text-[1.75vw] lg:text-[1.2vw]">
                         The {label}
                      </h4>
-                     <p className="font-light md:text-[1.5vw] lg:text-[1vw]">
+                     <p className="text-[2.5vw] font-light md:text-[1.5vw] lg:text-[1vw]">
                         ${price}.00
                      </p>
                   </span>
