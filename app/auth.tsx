@@ -65,7 +65,7 @@ const SignInProvider = () => {
                                     action();
                                     setIsClick(false);
                                  }}
-                                 className="text-[2.5vw] md:text-[2vw] flex flex-row items-center justify-center gap-[2vw] cursor-pointer"
+                                 className="text-[2.5vw] md:text-[2vw] lg:text-[1vw] flex flex-row items-center justify-center gap-[2vw] cursor-pointer"
                               >
                                  <IconComponent className="scale-60 md:scale-100" />{" "}
                                  {label}

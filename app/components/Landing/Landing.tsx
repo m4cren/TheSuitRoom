@@ -1,6 +1,6 @@
-import Image from "next/image";
-import SearchBar from "./SearchBar";
 import { ArrowUpRight } from "lucide-react";
+import Image from "next/image";
+import ShopButton from "./ShopButton";
 
 const loadAvatar = () => {
    const items = [];
@@ -28,8 +28,7 @@ const loadAvatar = () => {
 const Landing = () => {
    return (
       <section className="">
-         <SearchBar />
-         <div className="relative px-[3.5vw] mt-4 pb-[2vw]">
+         <div className="relative px-[3.5vw] mt-12 pb-[2vw]">
             <div className="flex flex-col gap-[2vw] md:gap-[3.5vw]">
                <h1 className="text-[5.75vw] md:text-[4.5vw] text-forest-green font-bold leading-[7vw] md:leading-[4.5vw]">
                   Look Sharp, Feel <br />
@@ -37,16 +36,14 @@ const Landing = () => {
                   Modern Man
                </h1>
                <div className="flex flex-row items-center gap-1 md:gap-2">
-                  <button className="text-[3.5vw] font-medium md:text-[1.6vw] lg:text-[1.25vw] bg-gradient-to-b from-slight-forest-green to-forest-green rounded-full text-mint-green px-[6vw] md:px-[4vw] py-[2vw] md:py-[1.35vw]  lg:py-[1vw]">
-                     Shop Now
-                  </button>
+                  <ShopButton />
                   <button className=" px-[1vw] py-[1vw] bg-gradient-to-b from-slight-forest-green to-forest-green rounded-full text-mint-green">
                      <ArrowUpRight />
                   </button>
                </div>
             </div>
 
-            <div className="relative -mt-[32vw] md:-mt-[21vw] w-full">
+            <div className="pointer-events-none relative -mt-[32vw] md:-mt-[21vw] w-full">
                <Image
                   src={"/images/Hero(Desktop).png"}
                   alt="hero"
