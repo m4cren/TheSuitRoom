@@ -1,11 +1,11 @@
-import SearchBar from "./_components/SearchBar";
+import SideBar from "./_components/SideBar";
 
 const page = () => {
    return (
-      <div>
-         {" "}
-         <SearchBar />
-      </div>
+      <main className="px-[3.5vw] my-[2vw]">
+         <SideBar />
+         <div></div>
+      </main>
    );
 };
 
