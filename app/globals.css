@@ -11,6 +11,31 @@ body {
 @theme {
    --color-forest-green: #013220;
    --color-slight-forest-green: #004a2f;
+   --color-dark-mint-green: #C6E5C6;
    --color-mint-green: #e6f4e6;
    --font-srisakdi: "Srisakdi", sans-serif;
+}
+
+.toggle-filter-open{
+   animation: toggleFilter 0.5s forwards;
+}
+.toggle-filter-close{
+   animation: toggleFilterClose 0.5s forwards;
+}
+
+@keyframes toggleFilter{
+   from{
+      transform: translateY(100%);
+   }
+   to{
+      transform: translateY(0%)
+   }
+}
+@keyframes toggleFilterClose{
+   from{
+      transform: translateY(0%)
+   }
+   to{
+      transform: translateY(100%);
+   }
 }

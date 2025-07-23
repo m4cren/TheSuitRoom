@@ -1,23 +1,10 @@
 import React from "react";
 import Filterer from "./Filterer";
-const categories: Record<string, { label: string; value: string }[]> = {
-   suit: [
-      { label: "Business / Formal Wear", value: "business suits" },
-      { label: "Wedding Suits", value: "wedding suits" },
-      { label: "Prom Suits", value: "prom suits" },
-      { label: "Casual Suits", value: "casual suits" },
-      { label: "Funeral Suits", value: "funeral suits" },
-      { label: "Party/Event Suits", value: "party suits" },
-   ],
-};
-const sizes: string[] = ["XS", "S", "M", "XL", "XXL"];
-const colorFamily = {
-   suit: ["Black", "Maroon", "Emerald Green", "Pink", "Grey"],
-};
+import { categories, colorFamily, sizes } from "@/lib/products";
 
 const SideBar = () => {
    return (
-      <aside className="flex flex-col gap-8">
+      <aside className="hidden lg:flex flex-col gap-8">
          <Filterer label="Category">
             {categories.suit.map(({ label, value }) => (
                <li key={value}>
