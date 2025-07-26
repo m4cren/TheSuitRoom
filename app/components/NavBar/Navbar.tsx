@@ -1,7 +1,7 @@
 "use client";
 import SignInProvider from "@/app/auth";
 import { auth } from "@/lib/firebase/client";
-import { MenuIcon, ShoppingCart, UserRound } from "lucide-react";
+import { MenuIcon, ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -24,9 +24,9 @@ const links: { label: string; value: string }[] = [
 ];
 
 const Navbar = () => {
-   const [user, loading, error] = useAuthState(auth);
+   const [user, loading] = useAuthState(auth);
    const [isPopup, setIsPopup] = useState<boolean>(false);
-   console.log(user);
+
    return (
       <nav className="relative">
          <div className="h-[10vw] md:h-[5vw] lg:h-[3vw] rounded-bl-full lg:rounded-b-full bg-forest-green [box-shadow:-2px_2px_4px_rgba(0,0,0,0.4)]"></div>
@@ -38,7 +38,7 @@ const Navbar = () => {
             </h1>
 
             <ul
-               className={`${user ? "justify-end pr-[3vw] md:pr-0 md:justify-around" : "justify-around md:justify-evenly lg:justify-around"} items-center text-[2vw] md:text-[1.5vw] lg:text-[1vw] absolute top-0 right-0 lg:right-1/2 lg:left-1/2  lg:-translate-x-1/2 flex flex-row  text-mint-green bg-forest-green pl-[5vw] md:pl-0 h-[10vw] md:h-[6vw] lg:h-[3vw] w-[55%] md:w-[60%] lg:w-[40%] rounded-bl-full m-auto lg:rounded-b-[10rem] bg-gradient-to-b from-forest-green to-slight-forest-green [box-shadow:-2px_2px_4px_rgba(0,0,0,0.4)]`}
+               className={`${user ? "justify-end pr-[3vw] md:pr-0 md:justify-around" : "justify-end pr-[3vw]  md:justify-evenly lg:justify-around"} items-center text-[2vw] md:text-[1.5vw] lg:text-[1vw] absolute top-0 right-0 lg:right-1/2 lg:left-1/2  lg:-translate-x-1/2 flex flex-row  text-mint-green bg-forest-green pl-[5vw] md:pl-0 h-[10vw] md:h-[6vw] lg:h-[3vw] w-[55%] md:w-[60%] lg:w-[40%] rounded-bl-full m-auto lg:rounded-b-[10rem] bg-gradient-to-b from-forest-green to-slight-forest-green [box-shadow:-2px_2px_4px_rgba(0,0,0,0.4)]`}
             >
                {links.map(({ label, value }, index) => (
                   <li key={index} className="hidden md:block">
@@ -74,7 +74,7 @@ const Navbar = () => {
                   )}
                </div>
             </ul>
-            <div className="hidden text-forest-green lg:flex flex-row items-center mt-[1.25vw] gap-8">
+            <div className="hidden text-forest-green lg:flex flex-row items-center mt-[1.25vw] gap-8 ">
                {loading ? (
                   <p>Loading...</p>
                ) : user ? (

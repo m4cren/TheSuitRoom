@@ -8,7 +8,7 @@ const FilterToggle = () => {
             {categories["suit"].map(({ label, value }) => (
                <li
                   key={value}
-                  className="text-[1.vw] bg-dark-mint-green px-10 py-2 rounded-md w-fit"
+                  className="text-[2.8vw] md:text-[1vw] bg-dark-mint-green px-6 md:px-10 py-2 rounded-md w-fit"
                >
                   {label}
                </li>
@@ -19,7 +19,7 @@ const FilterToggle = () => {
             {sizes.map((size) => (
                <li
                   key={size}
-                  className="text-[1.vw] bg-dark-mint-green px-10 py-2 rounded-md w-fit"
+                  className="text-[2.8vw] md:text-[1vw] bg-dark-mint-green px-6 md:px-10 py-2 rounded-md w-fit"
                >
                   {size}
                </li>
@@ -30,7 +30,7 @@ const FilterToggle = () => {
             {colorFamily["suit"].map((color) => (
                <li
                   key={color}
-                  className="text-[1.vw] bg-dark-mint-green px-10 py-2 rounded-md w-fit"
+                  className="text-[2.8vw] md:text-[1vw] bg-dark-mint-green px-6 md:px-10 py-2 rounded-md w-fit"
                >
                   {color}
                </li>
@@ -41,14 +41,14 @@ const FilterToggle = () => {
             <div>
                <input
                   type="number"
-                  className="rounded-md border-1 border-black/30 px-[2vw] w-[14vw] py-[1vw] text-[1.7vw] outline-none"
+                  className="rounded-md border-1 border-black/30 px-[2vw] w-[25vw] md:w-[14vw] py-[1vw] text-[3vw] md:text-[1.7vw] outline-none"
                   placeholder="Min $"
                />
 
                {" - "}
                <input
                   type="number"
-                  className="rounded-md border-1 border-black/30 px-[2vw] w-[14vw] py-[1vw] text-[1.7vw] outline-none"
+                  className="rounded-md border-1 border-black/30 px-[2vw] w-[25vw] md:w-[14vw] py-[1vw] text-[3vw] md:text-[1.7vw] outline-none"
                   placeholder="Max $"
                />
             </div>

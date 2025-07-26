@@ -57,7 +57,7 @@ const products = {
 
 const ProductList = () => {
    return (
-      <ul className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6">
          {products.suits["business_suits"].map(
             ({ category, img, label, old_price, price, value }) => (
                <ProductCard
